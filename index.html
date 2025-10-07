@@ -1,36 +1,28 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BigFlightBuddy – Solo Travel Deals, Smarter Itineraries</title>
-  <meta name="description" content="BigFlightBuddy is your AI co‑pilot for solo, budget travel. Get custom packing lists, cheap flight alerts, and plug‑and‑play itineraries. Save time. Spend less." />
-  <link rel="icon" href="/favicon.ico" />
-  <!-- Tailwind via CDN (fine for static landing). Swap to compiled CSS in production if needed. -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            bfd: {
-              primary: '#046bd2',
-              dark: '#023d78',
-              accent: '#00c2ff'
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="BigFlightBuddy – Solo Travel Deals, Smarter Itineraries" />
-  <meta property="og:description" content="AI co‑pilot for solo travelers. Cheap flights, itineraries, packing lists." />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  
-  <!-- JSON‑LD: Organization + Website -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BigFlightBuddy – Solo Travel Deals & Smarter Itineraries</title>
+    <meta name="description" content="Your AI co‑pilot for solo, budget travel. Find cheap flights, smarter itineraries, and packing lists with one clear pick per category.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="author" content="Lovable" />
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/tJGaFXDMTMge6jVbAhBVidTaHqu1/social-images/social-1759798071594-bfd logo.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/tJGaFXDMTMge6jVbAhBVidTaHqu1/social-images/social-1759798071594-bfd logo.png">
+    <meta property="og:title" content="BigFlightBuddy – Solo Travel Deals & Smarter Itineraries">
+  <meta name="twitter:title" content="BigFlightBuddy – Solo Travel Deals & Smarter Itineraries">
+  <meta property="og:description" content="Your AI co‑pilot for solo, budget travel: cheap flights, itineraries, and packing lists.">
+  <meta name="twitter:description" content="Your AI co‑pilot for solo, budget travel: cheap flights, itineraries, and packing lists.">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,10 +30,7 @@
     "name": "BigFlightBuddy",
     "url": "https://bigflightdeals.com",
     "logo": "https://bigflightdeals.com/logo.png",
-    "sameAs": [
-      "https://www.instagram.com/bigflightdeals",
-      "https://www.youtube.com/@bigflightdeals"
-    ]
+    "sameAs": []
   }
   </script>
   <script type="application/ld+json">
@@ -49,251 +38,14 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "BigFlightBuddy",
-    "url": "https://bigflightdeals.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://bigflightdeals.com/search?q={query}",
-      "query-input": "required name=query"
-    }
+    "url": "https://bigflightdeals.com/"
   }
   </script>
-  
-  <style>
-    /* Simple fade-in */
-    .fade-in { animation: fade 0.6s ease-out both; }
-    @keyframes fade { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: none;} }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.75); }
-  </style>
+
 </head>
-<body class="bg-gradient-to-b from-bfd-primary/5 to-white text-slate-800">
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-bfd-primary"><path fill="currentColor" d="M2 12c0-1.1.9-2 2-2h5l2-3l2 3h7a2 2 0 0 1 2 2v1h-2l-2 6H6l-2-6H2z"/></svg>
-        <span class="font-semibold">BigFlightBuddy</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#features" class="hover:text-bfd-primary">Features</a>
-        <a href="#how" class="hover:text-bfd-primary">How it works</a>
-        <a href="#deals" class="hover:text-bfd-primary">Cheap Flights</a>
-        <a href="#faq" class="hover:text-bfd-primary">FAQ</a>
-      </nav>
-      <a href="#signup" class="inline-flex items-center gap-2 rounded-full bg-bfd-primary text-white px-4 py-2 text-sm shadow hover:bg-bfd-dark">Get Started</a>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="relative">
-    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div class="fade-in">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Your AI co‑pilot for <span class="text-bfd-primary">solo, budget travel</span>
-        </h1>
-        <p class="mt-4 text-lg text-slate-600">Stop doom‑scrolling for deals. BigFlightBuddy finds cheap flights, builds smart itineraries, and generates packing lists that actually fit your trip.</p>
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="#deals" class="rounded-xl bg-bfd-primary text-white px-5 py-3 font-semibold shadow hover:bg-bfd-dark">Find Cheap Flights</a>
-          <a href="#signup" class="rounded-xl bg-white border border-slate-300 px-5 py-3 font-semibold hover:border-bfd-primary">Get Early Access</a>
-        </div>
-        <p class="mt-3 text-xs text-slate-500">No spam. Cancel anytime.</p>
-      </div>
-      <div class="fade-in">
-        <div class="glass rounded-3xl shadow p-4">
-          <img src="/hero-travel-buddy.png" alt="BigFlightBuddy interface mockup" class="w-full rounded-2xl" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust / counters -->
-  <section class="py-8 bg-white border-y border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-3 gap-6 text-center">
-      <div>
-        <div class="text-3xl font-extrabold">$ <span id="stat-saved">0</span>+</div>
-        <div class="text-sm text-slate-500">average savings reported*</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold"><span id="stat-users">250</span>+</div>
-        <div class="text-sm text-slate-500">beta signups</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold">3–5 hrs</div>
-        <div class="text-sm text-slate-500">planning time saved</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">What you get</h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold text-lg">Personalized Deal Finder</h3>
-          <p class="mt-2 text-sm text-slate-600">Enter your route + dates. We scan partner APIs to surface the cheapest legit options with clear rules, baggage, and transfer sanity.</p>
-        </div>
-        <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold text-lg">Smart Itineraries</h3>
-          <p class="mt-2 text-sm text-slate-600">Trip plans tuned for solo travelers: walkable areas, hostel suggestions, hikes, and city‑to‑city logistics that won’t nuke your budget.</p>
-        </div>
-        <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold text-lg">Auto Packing Lists</h3>
-          <p class="mt-2 text-sm text-slate-600">Packing lists generated from destination, climate, and trip length. Includes one clear product pick per category for easy checkout.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how" class="py-16 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border p-6 bg-white">
-          <p class="text-sm text-slate-500">Step 1</p>
-          <h3 class="font-semibold">Tell us your route + vibe</h3>
-          <p class="mt-2 text-sm text-slate-600">Budget, hostels, hikes, nightlife, slow travel—whatever matters. We tailor the plan.</p>
-        </div>
-        <div class="rounded-2xl border p-6 bg-white">
-          <p class="text-sm text-slate-500">Step 2</p>
-          <h3 class="font-semibold">We hunt the best options</h3>
-          <p class="mt-2 text-sm text-slate-600">Scan deals, trains/buses, and safe, solo‑friendly neighborhoods near the good stuff.</p>
-        </div>
-        <div class="rounded-2xl border p-6 bg-white">
-          <p class="text-sm text-slate-500">Step 3</p>
-          <h3 class="font-semibold">You book with clarity</h3>
-          <p class="mt-2 text-sm text-slate-600">One‑click links to flights, hostels, and a tight packing list. Zero overwhelm.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cheap Flights CTA -->
-  <section id="deals" class="py-16">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold">Cheap Flights – powered by partners</h2>
-        <p class="mt-3 text-slate-600">Click below to search flights. We use affiliate partners to keep the lights on. Same prices to you.</p>
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <!-- TODO: replace href with your Travelpayouts Aviasales (or White Label) link -->
-          <a id="cheap-flights-btn" href="https://aviasales.com/?marker=YOUR_TRAVELPAYOUTS_MARKER" target="_blank" rel="nofollow noopener" class="rounded-xl bg-bfd-primary text-white px-5 py-3 font-semibold shadow hover:bg-bfd-dark">Search Flights</a>
-          <!-- Airalo eSIM affiliate link placeholder -->
-          <a id="airalo-link" href="https://airalo.pxf.io/YOUR_AIRALO_AFFILIATE_ID" target="_blank" rel="nofollow noopener" class="rounded-xl bg-white border border-slate-300 px-5 py-3 font-semibold hover:border-bfd-primary">Get an eSIM (Airalo)</a>
-        </div>
-        <p class="mt-2 text-xs text-slate-500">Affiliate disclosure: we may earn a commission if you purchase through these links.</p>
-      </div>
-      <div class="rounded-2xl border p-4 bg-white">
-        <img src="/cheap-flights.jpg" alt="Flight search mockup" class="rounded-xl" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Lead capture / Early access -->
-  <section id="signup" class="py-16 bg-slate-50">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold">Get early access</h2>
-      <p class="mt-3 text-slate-600">Join the beta. We’ll send you deal alerts, launch news, and a free Solo Travel Starter Kit PDF.</p>
-
-      <!-- Replace form with your email provider embed. Basic email-only POST fallback below. -->
-      <form id="ml-form" action="MAILERLITE_OR_OTHER_FORM_ENDPOINT" method="post" class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-        <input required name="email" type="email" placeholder="your@email.com" class="w-full sm:w-96 rounded-xl border border-slate-300 px-4 py-3" />
-        <button class="rounded-xl bg-bfd-primary text-white px-5 py-3 font-semibold shadow hover:bg-bfd-dark" type="submit">Join Waitlist</button>
-      </form>
-      <p class="mt-2 text-xs text-slate-500">We respect your inbox. Unsubscribe anytime.</p>
-    </div>
-  </section>
-
-  <!-- Testimonials (placeholder) -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">What early users say</h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <blockquote class="rounded-2xl border p-6 bg-white text-sm text-slate-700">“Got BCN → LIS for under $90 and a hostel 3 minutes from the metro. The packing list was spot‑on.” <span class="block mt-2 text-slate-500">— Riley J.</span></blockquote>
-        <blockquote class="rounded-2xl border p-6 bg-white text-sm text-slate-700">“I hate planning. BFB gave me 4 must‑do hikes in Andalusia and told me exactly how to get there.” <span class="block mt-2 text-slate-500">— Sam M.</span></blockquote>
-        <blockquote class="rounded-2xl border p-6 bg-white text-sm text-slate-700">“Way less scrolling, way more doing. Booked flights + eSIM in 10 minutes.” <span class="block mt-2 text-slate-500">— Alex C.</span></blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="py-16 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold">FAQ</h2>
-      <div class="mt-8 grid md:grid-cols-2 gap-6 text-sm">
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">Is this free?</h3>
-          <p class="mt-2 text-slate-600">Core features are free in beta. Some premium tools (e.g., pro itineraries) may come later. Affiliate links keep it running at no extra cost to you.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">How do you find cheap flights?</h3>
-          <p class="mt-2 text-slate-600">We integrate with flight deal partners and search patterns that solo travelers actually use—no clickbait, no 40‑hour layovers.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">Do you plan routes for me?</h3>
-          <p class="mt-2 text-slate-600">Yes. Give us your dates and energy levels; we’ll map the best city flow and hikes without blowing your budget.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">How do you monetize?</h3>
-          <p class="mt-2 text-slate-600">Affiliate links (flights, eSIMs, gear) and future premium tools. We always disclose and keep recommendations simple: one clear pick per category.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-12 border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
-      <div>
-        <div class="font-semibold">BigFlightBuddy</div>
-        <p class="mt-2 text-slate-600">Human + AI travel buddy for solo, budget adventures.</p>
-      </div>
-      <div>
-        <div class="font-semibold">Company</div>
-        <ul class="mt-2 space-y-1 text-slate-600">
-          <li><a class="hover:text-bfd-primary" href="#">About</a></li>
-          <li><a class="hover:text-bfd-primary" href="#">Contact</a></li>
-          <li><a class="hover:text-bfd-primary" href="#">Affiliate Disclosure</a></li>
-          <li><a class="hover:text-bfd-primary" href="#">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-semibold">Stay in the loop</div>
-        <form action="MAILERLITE_OR_OTHER_FORM_ENDPOINT" method="post" class="mt-2 flex gap-2">
-          <input required name="email" type="email" placeholder="email" class="w-full rounded-xl border border-slate-300 px-3 py-2" />
-          <button class="rounded-xl bg-bfd-primary text-white px-4 py-2 font-semibold hover:bg-bfd-dark" type="submit">Join</button>
-        </form>
-      </div>
-    </div>
-    <div class="max-w-6xl mx-auto px-4 mt-8 text-xs text-slate-500">© <span id="year"></span> BigFlightBuddy. All rights reserved.</div>
-  </footer>
-
-  <!-- GA4 (placeholder) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script> -->
-
-  <script>
-    // Basic number animation for stats
-    function animateValue(id, start, end, duration) {
-      const obj = document.getElementById(id);
-      const range = end - start;
-      let startTime = null;
-      function step(timestamp) {
-        if (!startTime) startTime = timestamp;
-        const progress = Math.min((timestamp - startTime) / duration, 1);
-        obj.textContent = Math.floor(progress * range + start);
-        if (progress < 1) window.requestAnimationFrame(step);
-      }
-      window.requestAnimationFrame(step);
-    }
-    window.addEventListener('load', () => {
-      animateValue('stat-saved', 0, 180, 900);
-      animateValue('stat-users', 0, 250, 900);
-      document.getElementById('year').textContent = new Date().getFullYear();
-    });
-  </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
